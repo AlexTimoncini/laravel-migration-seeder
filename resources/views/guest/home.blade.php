@@ -4,9 +4,9 @@
 
 @section('main-section')
     <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
             @foreach ($trains as $train)
-            <div class="card">
+            <div class="card col-3 m-2 p-0">
                 <div class="card-header">
                     {{ $train->departure_station }} -> {{ $train->arrival_station }}
                 </div>
@@ -19,5 +19,4 @@
             @endforeach
         </div>
     </div>
-    @dd($trains);
 @endsection
